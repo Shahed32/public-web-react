@@ -2,20 +2,20 @@ name: Shahed32/public-web-react
 
 on:
   push:
-    branches: [main]
+    branches: [www.shahedbd.com]
   pull_request:
-    branches: [main]
+    branches: [www.shahedbd.com]
 
 permissions: write-all
 
 env:
   CI: false
-  Branches: main
-  MainBranch: main
+  Branches: www.shahedbd.com
+  MainBranch: www.shahedbd.com
   NPMRegistry: https://registry.npmjs.org/
-  InstallCommand: npm ci
+  InstallCommand: npm i
   BuildCommand: npm run build
-  Output: ./build
+  Output: ./public
 
 jobs:
   build:
